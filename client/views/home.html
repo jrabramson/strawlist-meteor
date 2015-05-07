@@ -1,0 +1,25 @@
+<template name="home">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Strawlist</h1>
+      <form class="new-list">
+	    <input type="text" class="list_title" name='title' placeholder="List Title">
+	    <br>
+	    <br>
+	    <div class='task_list'>
+	        <input type="text" class="new_task" name='task0' placeholder="To do...">
+	        <input type="text" class="new_task" name='task1' placeholder="To do...">
+	        <input type="text" class="new_task" name='task2' placeholder="To do...">
+	        <input type="text" class="new_task" name='task3' placeholder="To do...">
+	        <input type="text" class="new_task" name='task4' placeholder="To do...">
+        </div>
+        <br>
+      	<button class='create'>Create List</button>
+      </form>
+    </div>
+    <div id='created_alert'>
+		YOUR LIST HAS BEEN CREATED AND IS NOW AVAILABLE AT
+		<a href='' class='created_link'></a>
+    </div>
+  </div>
+</template>

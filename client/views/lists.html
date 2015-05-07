@@ -1,0 +1,16 @@
+<template name="lists">
+  <div class="container">
+	{{#each lists}}
+		<h2>{{title}}</h2>
+	{{/each}}
+	<ol>
+		{{#each tasks}}
+			<li class='{{checkedClass}}'>
+				<input type="checkbox" checked="{{checked}}" name="checked">
+				<span class='task'>{{content}}</span>
+			</li>
+		{{/each}}
+	</ol>
+	<input type="text" class="update_task" name='update_task' placeholder="To do...">
+  </div>
+</template>
